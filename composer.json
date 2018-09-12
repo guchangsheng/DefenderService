@@ -1,5 +1,5 @@
 {
-    "name": "defender_service",
+    "name": "defender/dam_service",
     "description": "common components",
     "keywords": ["guzzle"],
     "support": {
