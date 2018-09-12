@@ -1,0 +1,1 @@
+<?phpnamespace DefenderService\DamMicroService\Services;use DefenderService\DamMicroService\Contracts\MicroServiceApplicationInterface;class Passport implements MicroServiceApplicationInterface{    public function updateGroups(){        echo 99;die;    }    public function setToken($token)    {        // TODO: Implement setToken() method.    }}

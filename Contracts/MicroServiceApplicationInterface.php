@@ -1,0 +1,1 @@
+<?phpnamespace DefenderService\DamMicroService\Contracts;interface MicroServiceApplicationInterface{       public function setToken($token);}
