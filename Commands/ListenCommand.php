@@ -50,9 +50,8 @@ class ListenCommand extends Command
     public function __construct()
     {
         parent::__construct();
-
-        $this->listener = new Listener('');
-
+        $this->listener = new Listener(base_path());
+        $this->setOutputHandler($this->listener);
     }
 
     /**
