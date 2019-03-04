@@ -2,7 +2,7 @@
 
 namespace DefenderService\DamMicroService\Commands;
 
-use DefenderService\DamMicroService\ProcessQueueListen\Traits\ListenCommandTrait;
+use DefenderService\DamMicroService\Traits\ListenCommandTrait;
 use Illuminate\Queue\Listener;
 use Illuminate\Console\Command;
 use Illuminate\Queue\ListenerOptions;
