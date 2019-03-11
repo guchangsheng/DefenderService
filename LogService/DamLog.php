@@ -1,0 +1,1 @@
+<?phpnamespace DefenderService\DamMicroService\LogService;use Illuminate\Support\Facades\Facade;class DamLog extends Facade{    protected static function getFacadeAccessor()    {        return 'DamLogService';    }}
