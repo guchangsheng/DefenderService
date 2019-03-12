@@ -47,12 +47,13 @@ class ListenCommand extends Command
      * @param  \Illuminate\Queue\Listener  $listener
      * @return void
      */
-    public function __construct()
+    public function __construct(Listener $listener)
     {
         parent::__construct();
-        $this->listener = new Listener(base_path());
-        $this->setOutputHandler($this->listener);
+
+        $this->setOutputHandler($this->listener = $listener);
     }
+
 
     /**
      * Execute the console command.
