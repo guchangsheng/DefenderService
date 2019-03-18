@@ -1,24 +1,25 @@
 {
-    "name": "defender/dam_service",
-    "description": "common components",
-    "keywords": ["guzzle"],
-    "support": {
-        "issues": "https://github.com/guchangsheng/supports/issues",
-        "source": "https://github.com/guchangsheng/supports"
+  "name": "defender/dam_service",
+  "description": "common components",
+  "keywords": ["guzzle"],
+  "support": {
+    "issues": "https://github.com/guchangsheng/supports/issues",
+    "source": "https://github.com/guchangsheng/supports"
+  },
+  "authors": [
+    {
+      "name": "defender-gcs",
+      "email": "123381859@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "DefenderService\\DamMicroService\\": ""
     },
-    "authors": [
-        {
-            "name": "defender-gcs",
-            "email": "123381859@qq.com"
-        }
-    ],
-    "require": {
-        "php": ">=7.0.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "DefenderService\\DamMicroService\\": ""
-        }
-    },
-    "license": "MIT"
+    "files": ["Queue/Worker.php"]
+  },
+  "license": "MIT"
 }
