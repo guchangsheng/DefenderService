@@ -1,0 +1,1 @@
+<?php/** * Created by PhpStorm. * User: admin * Date: 2018/9/11 * Time: 14:42 */return  [    'workerMaxTimes'=>env('workerMaxTimes')?env('workerMaxTimes'):3];
