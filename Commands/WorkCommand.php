@@ -2,6 +2,7 @@
 
 namespace DefenderService\DamMicroService\Commands;
 
+use DefenderService\DamMicroService\Queue\QueueManager;
 use Illuminate\Queue\Worker;
 use Illuminate\Support\Carbon;
 use Illuminate\Console\Command;
@@ -89,6 +90,9 @@ class WorkCommand extends Command
             }
         }
         $this->PidFile = '/tmp/'.$this->option('queue')."_Pid_File";
+
+        QueueManager::$damQueue = true;
+
         $this->process($run);
         // We need to get the right queue for the connection which is set in the queue
         // configuration file for the application. We will pull it based on the set
