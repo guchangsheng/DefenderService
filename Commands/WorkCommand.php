@@ -219,10 +219,22 @@ class WorkCommand extends Command
      */
     protected function logFailedJob(JobFailed $event)
     {
-        $this->laravel['queue.failer']->log(
+        $id = $this->laravel['queue.failer']->log(
             $event->connectionName, $event->job->getQueue(),
             $event->job->getRawBody(), $event->exception
         );
+
+        $data = json_decode($event->job->getRawBody(),true);
+
+        if(isset($data['data']['command'])){
+
+            $command = unserialize($data['data']['command']);
+
+            if (method_exists($command, 'damJobFailed')){
+
+                $command->damJobFailed($id,$command);
+            }
+        }
     }
 
     /**
