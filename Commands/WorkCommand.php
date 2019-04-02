@@ -166,6 +166,7 @@ class WorkCommand extends Command
 
         $this->laravel['events']->listen(JobProcessed::class, function ($event) {
             $this->writeOutput($event->job, 'success');
+            $this->logSuccessJob($event);
         });
 
         $this->laravel['events']->listen(JobFailed::class, function ($event) {
@@ -237,6 +238,27 @@ class WorkCommand extends Command
         }
     }
 
+
+    /**
+     * Store a success job event.
+     *
+     * @param  \Illuminate\Queue\Events\JobFailed  $event
+     * @return void
+     */
+    protected function logSuccessJob(JobProcessed $event)
+    {
+        $data = json_decode($event->job->getRawBody(),true);
+
+        if(isset($data['data']['command'])){
+
+            $command = unserialize($data['data']['command']);
+
+            if (method_exists($command, 'damJobFailed')){
+
+                $command->damJobSuccess($command);
+            }
+        }
+    }
     /**
      * Get the queue name for the worker.
      *
