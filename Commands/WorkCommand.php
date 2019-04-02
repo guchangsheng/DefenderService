@@ -166,12 +166,10 @@ class WorkCommand extends Command
 
         $this->laravel['events']->listen(JobProcessed::class, function ($event) {
             $this->writeOutput($event->job, 'success');
-            $this->logSuccessJob($event);
         });
 
         $this->laravel['events']->listen(JobFailed::class, function ($event) {
             $this->writeOutput($event->job, 'failed');
-
             $this->logFailedJob($event);
         });
     }
