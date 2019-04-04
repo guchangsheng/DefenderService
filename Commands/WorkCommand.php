@@ -169,13 +169,11 @@ class WorkCommand extends Command
 
         $this->laravel['events']->listen(JobProcessed::class, function ($event) {
             $this->writeOutput($event->job, 'success');
-            $this->logSuccessJob($event);
         });
 
         $this->laravel['events']->listen(JobFailed::class, function ($event) {
             $this->writeOutput($event->job, 'failed');
 
-            $this->logFailedJob($event);
         });
     }
 
@@ -239,8 +237,7 @@ class WorkCommand extends Command
                 $command->damJobFailed($id,$command);
             }
         }
-
-        pcntl_signal_dispatch();
+        # pcntl_signal_dispatch();
     }
 
 
@@ -252,7 +249,6 @@ class WorkCommand extends Command
      */
     protected function logSuccessJob(JobProcessed $event)
     {
-        echo 8;
         $data = json_decode($event->job->getRawBody(),true);
 
         if(isset($data['data']['command'])){
@@ -265,7 +261,7 @@ class WorkCommand extends Command
             }
         }
 
-        pcntl_signal_dispatch();
+        # pcntl_signal_dispatch();
     }
     /**
      * Get the queue name for the worker.

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fafe787-475a-4a37-b291-27b7ce302c3f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Commands/WorkCommand.php" afterPath="$PROJECT_DIR$/Commands/WorkCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DamMicroServiceProvider.php" afterPath="$PROJECT_DIR$/DamMicroServiceProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Queue/QueueManager.php" afterPath="$PROJECT_DIR$/Queue/QueueManager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Traits/ListenCommandTrait.php" afterPath="$PROJECT_DIR$/Traits/ListenCommandTrait.php" />
     </list>
@@ -32,8 +30,8 @@
       <file leaf-file-name="WorkCommand.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+            <state relative-caret-position="637">
+              <caret line="288" column="0" lean-forward="false" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
               <folding>
                 <element signature="e#60#115#0#PHP" expanded="true" />
               </folding>
@@ -41,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListenCommandTrait.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListenCommandTrait.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Traits/ListenCommandTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="394" column="0" lean-forward="false" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
+            <state relative-caret-position="637">
+              <caret line="393" column="0" lean-forward="false" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
               <folding>
                 <element signature="e#58#112#0#PHP" expanded="true" />
               </folding>
@@ -56,18 +54,18 @@
       <file leaf-file-name="DamMicroServiceProvider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DamMicroServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1216">
-              <caret line="84" column="1" lean-forward="false" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+            <state relative-caret-position="152">
+              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueueManager.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QueueManager.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+            <state relative-caret-position="813">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="e#57#119#0#PHP" expanded="true" />
               </folding>
@@ -86,10 +84,10 @@
         <option value="$PROJECT_DIR$/Queue/Worker.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/Commands/ListenCommand.php" />
+        <option value="$PROJECT_DIR$/DamMicroServiceProvider.php" />
         <option value="$PROJECT_DIR$/Queue/QueueManager.php" />
         <option value="$PROJECT_DIR$/Traits/ListenCommandTrait.php" />
         <option value="$PROJECT_DIR$/Commands/WorkCommand.php" />
-        <option value="$PROJECT_DIR$/DamMicroServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -101,8 +99,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
-    <option name="y" value="27" />
+    <option name="x" value="236" />
+    <option name="y" value="178" />
     <option name="width" value="1714" />
     <option name="height" value="861" />
   </component>
@@ -192,15 +190,15 @@
       <workItem from="1554179502233" duration="802000" />
       <workItem from="1554193175509" duration="2500000" />
       <workItem from="1554253062926" duration="5815000" />
-      <workItem from="1554338452562" duration="3098000" />
+      <workItem from="1554338452562" duration="4721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31237000" />
+    <option name="totallyTimeSpent" value="32860000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="27" width="1714" height="861" extended-state="0" />
+    <frame x="236" y="178" width="1714" height="861" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2317217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -635,10 +633,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Traits/ListenCommandTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="393" column="0" lean-forward="false" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+          <folding>
+            <element signature="e#58#112#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+        <state relative-caret-position="637">
+          <caret line="288" column="0" lean-forward="false" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
           <folding>
             <element signature="e#60#115#0#PHP" expanded="true" />
           </folding>
@@ -647,28 +655,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DamMicroServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="84" column="1" lean-forward="false" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+        <state relative-caret-position="152">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        <state relative-caret-position="813">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="e#57#119#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Traits/ListenCommandTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="394" column="0" lean-forward="false" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
-          <folding>
-            <element signature="e#58#112#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
