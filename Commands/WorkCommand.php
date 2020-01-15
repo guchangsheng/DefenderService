@@ -139,7 +139,7 @@ class WorkCommand extends Command
     }
 
     /**
-     * 超时重连检测
+     * 断线重连检测
      * create by changsheng.gu@vcg.com
      * @return boolean
      */
@@ -152,7 +152,7 @@ class WorkCommand extends Command
     }
 
     /**
-     * 超时重连检测
+     * 断线重连检测
      * create by changsheng.gu@vcg.com
      * @return boolean;
      */
@@ -306,11 +306,9 @@ class WorkCommand extends Command
         $data = json_decode($event->job->getRawBody(),true);
 
         if(isset($data['data']['command'])){
-
             $command = unserialize($data['data']['command']);
 
             if (method_exists($command, 'damJobFailed')){
-
                 $command->damJobSuccess($command);
             }
         }

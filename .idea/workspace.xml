@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fafe787-475a-4a37-b291-27b7ce302c3f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Commands/WorkCommand.php" afterPath="$PROJECT_DIR$/Commands/WorkCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Queue/QueueManager.php" afterPath="$PROJECT_DIR$/Queue/QueueManager.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkCommand.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WorkCommand.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6498">
-              <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+            <state relative-caret-position="1274">
+              <caret line="306" column="0" lean-forward="true" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
               <folding>
                 <element signature="e#60#115#0#PHP" expanded="true" />
               </folding>
@@ -39,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueueManager.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueueManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2166">
-              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+            <state relative-caret-position="115">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="e#57#119#0#PHP" expanded="true" />
               </folding>
@@ -185,12 +183,12 @@
       <workItem from="1554795124205" duration="4708000" />
       <workItem from="1556012378204" duration="275000" />
       <workItem from="1559966984199" duration="1890000" />
-      <workItem from="1579078979748" duration="141000" />
+      <workItem from="1579078979748" duration="999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41069000" />
+    <option name="totallyTimeSpent" value="41927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="41" width="1932" height="915" extended-state="0" />
@@ -639,22 +637,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
+    <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6498">
-          <caret line="342" column="0" lean-forward="false" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+        <state relative-caret-position="115">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
-            <element signature="e#60#115#0#PHP" expanded="true" />
+            <element signature="e#57#119#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
+    <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2166">
-          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        <state relative-caret-position="1274">
+          <caret line="306" column="0" lean-forward="true" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
           <folding>
-            <element signature="e#57#119#0#PHP" expanded="true" />
+            <element signature="e#60#115#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
