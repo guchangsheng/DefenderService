@@ -12,7 +12,7 @@ use Illuminate\Queue\Events\JobFailed;
 use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Queue\Events\JobProcessing;
 use DefenderService\DamMicroService\Traits\ListenCommandTrait;
-
+use Illuminate\Support\Str;
 class WorkCommand extends Command
 {
 
@@ -96,6 +96,7 @@ class WorkCommand extends Command
         QueueManager::$damQueue = true;
 
         $this->process($run);
+
         // We need to get the right queue for the connection which is set in the queue
         // configuration file for the application. We will pull it based on the set
         // connection being run for the queue operation currently being executed.
@@ -113,19 +114,72 @@ class WorkCommand extends Command
         // which jobs are coming through a queue and be informed on its progress.
         $this->listenForEvents();
 
-        $connection = $this->argument('connection')
-            ?: $this->laravel['config']['queue.default'];
+        try {
+            re_connect: $connection = $this->argument('connection')
+                ?: $this->laravel['config']['queue.default'];
 
-        // We need to get the right queue for the connection which is set in the queue
-        // configuration file for the application. We will pull it based on the set
-        // connection being run for the queue operation currently being executed.
-        $queue = $this->getQueue($connection);
+            // We need to get the right queue for the connection which is set in the queue
+            // configuration file for the application. We will pull it based on the set
+            // connection being run for the queue operation currently being executed.
+            $queue = $this->getQueue($connection);
+            $this->runWorker(
+                $connection, $queue
+            );
+        }catch (\Exception $e){
+            if($this->tryAgainIfCausedByLostConnection($e)){
+                if(QueueManager::$connectTryTimes>=30){
+                    throw $e;
+                }
+                QueueManager::$connectTryTimes++;
+                sleep(1);
+                goto re_connect;
+            }
+        }
 
-        $this->runWorker(
-            $connection, $queue
-        );
     }
 
+    /**
+     * 超时重连检测
+     * create by changsheng.gu@vcg.com
+     * @return boolean
+     */
+    protected function tryAgainIfCausedByLostConnection($e)
+    {
+        if ($this->causedByLostConnection($e)) {
+            return true;
+        }
+        throw $e;
+    }
+
+    /**
+     * 超时重连检测
+     * create by changsheng.gu@vcg.com
+     * @return boolean;
+     */
+    protected function causedByLostConnection($e)
+    {
+        $message = $e->getMessage();
+        return Str::contains($message, [
+            'server has gone away',
+            'no connection to the server',
+            'Lost connection',
+            'Connection lost',
+            'is dead or not enabled',
+            'Error while sending',
+            'Error while reading line from the server',
+            'decryption failed or bad record mac',
+            'server closed the connection unexpectedly',
+            'Error writing data to the connection',
+            'child connection forced to terminate due to client_idle_limit',
+            'query_wait_timeout',
+            'reset by peer',
+            'Physical connection is not usable',
+            'TCP Provider: Error code 0x68',
+            'Name or service not known',
+            'went away',
+            'Connection refused'
+        ]);
+    }
     /**
      * Run the worker instance.
      *
