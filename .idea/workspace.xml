@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fafe787-475a-4a37-b291-27b7ce302c3f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Commands/WorkCommand.php" afterPath="$PROJECT_DIR$/Commands/WorkCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Traits/ListenCommandTrait.php" afterPath="$PROJECT_DIR$/Traits/ListenCommandTrait.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,23 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ListenCommand.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commands/ListenCommand.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-              <folding>
-                <element signature="e#60#115#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkCommand.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WorkCommand.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="306" column="0" lean-forward="true" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+            <state relative-caret-position="5624">
+              <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
               <folding>
                 <element signature="e#60#115#0#PHP" expanded="true" />
               </folding>
@@ -37,10 +26,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueueManager.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ListenCommandTrait.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Traits/ListenCommandTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="184" column="13" lean-forward="true" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+              <folding>
+                <element signature="e#58#112#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueueManager.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="-1121">
               <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="e#57#119#0#PHP" expanded="true" />
@@ -68,10 +69,10 @@
         <option value="$PROJECT_DIR$/Queue/Worker.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/Commands/ListenCommand.php" />
-        <option value="$PROJECT_DIR$/Traits/ListenCommandTrait.php" />
         <option value="$PROJECT_DIR$/DamMicroServiceProvider.php" />
         <option value="$PROJECT_DIR$/Queue/QueueManager.php" />
         <option value="$PROJECT_DIR$/Commands/WorkCommand.php" />
+        <option value="$PROJECT_DIR$/Traits/ListenCommandTrait.php" />
       </list>
     </option>
   </component>
@@ -83,8 +84,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="41" />
+    <option name="x" value="601" />
+    <option name="y" value="70" />
     <option name="width" value="1932" />
     <option name="height" value="915" />
   </component>
@@ -183,15 +184,16 @@
       <workItem from="1554795124205" duration="4708000" />
       <workItem from="1556012378204" duration="275000" />
       <workItem from="1559966984199" duration="1890000" />
-      <workItem from="1579078979748" duration="999000" />
+      <workItem from="1579078979748" duration="1363000" />
+      <workItem from="1582771272346" duration="88000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41927000" />
+    <option name="totallyTimeSpent" value="42379000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="41" width="1932" height="915" extended-state="0" />
+    <frame x="601" y="70" width="1932" height="915" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20532915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -607,16 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Traits/ListenCommandTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3649">
-          <caret line="390" column="0" lean-forward="false" selection-start-line="390" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
-          <folding>
-            <element signature="e#58#112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DamMicroServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
@@ -629,7 +621,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Commands/ListenCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state relative-caret-position="723">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="e#60#115#0#PHP" expanded="true" />
@@ -637,22 +629,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
+    <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="5624">
+          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
           <folding>
-            <element signature="e#57#119#0#PHP" expanded="true" />
+            <element signature="e#60#115#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
+    <entry file="file://$PROJECT_DIR$/Traits/ListenCommandTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="306" column="0" lean-forward="true" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+        <state relative-caret-position="39">
+          <caret line="184" column="13" lean-forward="true" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
           <folding>
-            <element signature="e#60#115#0#PHP" expanded="true" />
+            <element signature="e#58#112#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1121">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#57#119#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
