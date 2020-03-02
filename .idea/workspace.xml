@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2fafe787-475a-4a37-b291-27b7ce302c3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Commands/WorkCommand.php" afterPath="$PROJECT_DIR$/Commands/WorkCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Traits/ListenCommandTrait.php" afterPath="$PROJECT_DIR$/Traits/ListenCommandTrait.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="WorkCommand.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WorkCommand.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5624">
-              <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+            <state relative-caret-position="4944">
+              <caret line="344" column="0" lean-forward="true" selection-start-line="344" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
               <folding>
                 <element signature="e#60#115#0#PHP" expanded="true" />
               </folding>
@@ -29,19 +30,19 @@
       <file leaf-file-name="ListenCommandTrait.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Traits/ListenCommandTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="184" column="13" lean-forward="true" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+            <state relative-caret-position="7982">
+              <caret line="480" column="0" lean-forward="true" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
               <folding>
-                <element signature="e#58#112#0#PHP" expanded="true" />
+                <element signature="e#58#115#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueueManager.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QueueManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1121">
+            <state relative-caret-position="19">
               <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="e#57#119#0#PHP" expanded="true" />
@@ -71,8 +72,8 @@
         <option value="$PROJECT_DIR$/Commands/ListenCommand.php" />
         <option value="$PROJECT_DIR$/DamMicroServiceProvider.php" />
         <option value="$PROJECT_DIR$/Queue/QueueManager.php" />
-        <option value="$PROJECT_DIR$/Commands/WorkCommand.php" />
         <option value="$PROJECT_DIR$/Traits/ListenCommandTrait.php" />
+        <option value="$PROJECT_DIR$/Commands/WorkCommand.php" />
       </list>
     </option>
   </component>
@@ -83,11 +84,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="601" />
-    <option name="y" value="70" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="379" />
+    <option name="y" value="86" />
     <option name="width" value="1932" />
-    <option name="height" value="915" />
+    <option name="height" value="1102" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -104,8 +105,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,25 +112,12 @@
               <item name="DefenderService" type="b2602c69:ProjectViewProjectNode" />
               <item name="DefenderService" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="DefenderService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DefenderService" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Commands" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DefenderService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DefenderService" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Queue" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DefenderService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DefenderService" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,18 +171,19 @@
       <workItem from="1556012378204" duration="275000" />
       <workItem from="1559966984199" duration="1890000" />
       <workItem from="1579078979748" duration="1363000" />
-      <workItem from="1582771272346" duration="88000" />
+      <workItem from="1582771272346" duration="3780000" />
+      <workItem from="1583138114861" duration="4349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42379000" />
+    <option name="totallyTimeSpent" value="50420000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="601" y="70" width="1932" height="915" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20532915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -239,7 +226,7 @@
         <state relative-caret-position="4544">
           <caret line="284" column="0" lean-forward="true" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
           <folding>
-            <element signature="e#58#112#0#PHP" expanded="true" />
+            <element signature="e#58#115#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -256,7 +243,7 @@
         <state relative-caret-position="1808">
           <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
           <folding>
-            <element signature="e#60#115#0#PHP" expanded="true" />
+            <element signature="e#60#115#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -276,7 +263,7 @@
         <state relative-caret-position="2912">
           <caret line="182" column="23" lean-forward="false" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
           <folding>
-            <element signature="e#58#112#0#PHP" expanded="true" />
+            <element signature="e#58#115#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -318,7 +305,7 @@
         <state relative-caret-position="1872">
           <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
           <folding>
-            <element signature="e#60#115#0#PHP" expanded="true" />
+            <element signature="e#60#115#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -328,7 +315,7 @@
         <state relative-caret-position="2912">
           <caret line="182" column="23" lean-forward="false" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
           <folding>
-            <element signature="e#58#112#0#PHP" expanded="true" />
+            <element signature="e#58#115#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -390,7 +377,7 @@
         <state relative-caret-position="2912">
           <caret line="182" column="23" lean-forward="false" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
           <folding>
-            <element signature="e#58#112#0#PHP" expanded="true" />
+            <element signature="e#58#115#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -418,7 +405,7 @@
         <state relative-caret-position="1808">
           <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
           <folding>
-            <element signature="e#60#115#0#PHP" expanded="true" />
+            <element signature="e#60#115#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -457,7 +444,7 @@
         <state relative-caret-position="896">
           <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
-            <element signature="e#51#106#0#PHP" expanded="true" />
+            <element signature="e#51#106#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -467,7 +454,7 @@
         <state relative-caret-position="2224">
           <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding>
-            <element signature="e#60#115#0#PHP" expanded="true" />
+            <element signature="e#60#115#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -491,7 +478,7 @@
         <state relative-caret-position="80">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#51#106#0#PHP" expanded="true" />
+            <element signature="e#51#106#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -501,7 +488,7 @@
         <state relative-caret-position="176">
           <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
-            <element signature="e#60#115#0#PHP" expanded="true" />
+            <element signature="e#60#115#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -511,7 +498,7 @@
         <state relative-caret-position="144">
           <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding>
-            <element signature="e#58#112#0#PHP" expanded="true" />
+            <element signature="e#58#115#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -528,7 +515,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#51#106#0#PHP" expanded="true" />
+            <element signature="e#51#106#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -614,7 +601,7 @@
         <state relative-caret-position="625">
           <caret line="70" column="47" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
           <folding>
-            <element signature="e#51#106#0#PHP" expanded="true" />
+            <element signature="e#51#106#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -624,37 +611,37 @@
         <state relative-caret-position="723">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
-            <element signature="e#60#115#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5624">
-          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
-          <folding>
-            <element signature="e#60#115#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Traits/ListenCommandTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="184" column="13" lean-forward="true" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
-          <folding>
-            <element signature="e#58#112#0#PHP" expanded="true" />
+            <element signature="e#60#115#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Queue/QueueManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1121">
+        <state relative-caret-position="19">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="e#57#119#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Traits/ListenCommandTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7982">
+          <caret line="480" column="0" lean-forward="true" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
+          <folding>
+            <element signature="e#58#115#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commands/WorkCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4944">
+          <caret line="344" column="0" lean-forward="true" selection-start-line="344" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
+          <folding>
+            <element signature="e#60#115#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

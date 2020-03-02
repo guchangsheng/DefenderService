@@ -35,7 +35,8 @@ class WorkCommand extends Command
                             {--timeout=60 : The number of seconds a child process can run}
                             {--tries=0 : Number of times to attempt a job before logging it failed}
                             {--r=0 : Number of times to attempt a job before logging it failed}
-                            {--n=0 : Number of times to attempt a job before logging it failed}';
+                            {--n=0 : Number of times to attempt a job before logging it failed}
+                            {--debug=0: debug mode}';
 
     /**
      * The console command description.
@@ -80,8 +81,7 @@ class WorkCommand extends Command
             exit(0);
         }else{
             $this->queue = $this->option('queue');
-            if($run =='start')
-            {
+            if($run =='start') {
                 $this->ForkNumber = $this->option('n')?$this->option('n'):1; //进程数量
 
             }elseif($run == 'stop'||$run == 'status'||$run =="reload") {
@@ -91,12 +91,16 @@ class WorkCommand extends Command
                 $this->printInfo('无效run命令');
             }
         }
+
+        if($this->option('debug')==1){
+            self::$debug_mode = true;
+        }
+
         $this->PidFile = '/tmp/'.$this->option('queue')."_Pid_File";
 
         QueueManager::$damQueue = true;
 
         $this->process($run);
-
         // We need to get the right queue for the connection which is set in the queue
         // configuration file for the application. We will pull it based on the set
         // connection being run for the queue operation currently being executed.
