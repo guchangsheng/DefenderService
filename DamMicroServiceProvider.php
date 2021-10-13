@@ -10,6 +10,11 @@ use DefenderService\DamMicroService\Commands\WorkCommand;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Queue\Events\JobProcessing;
+use Illuminate\Queue\Events\JobFailed;
+use Illuminate\Queue\Failed\NullFailedJobProvider;
+use Illuminate\Queue\Connectors\BeanstalkdConnector;
+use Illuminate\Queue\Failed\DatabaseFailedJobProvider;
+use Monolog\Handler\StreamHandler;
 
 class DamMicroServiceProvider extends ServiceProvider
 {
@@ -34,17 +39,31 @@ class DamMicroServiceProvider extends ServiceProvider
 
         Queue::before(function (JobProcessing $event) //回调队列执行前回调事件
         {
-            QueueManager::MaxWorkTimes($event);
+            QueueManager::instance()->MaxWorkTimes($event);
         });
 
         Queue::after(function (JobProcessed $event) //回调队列执行前后回调事件
         {
-            QueueManager::MaxWorkTimes($event);
+            QueueManager::instance()->MaxWorkTimes($event);
+        });
+
+        Queue::failing(function (JobFailed $event) //回调失败后处理
+        {
+            QueueManager::instance()->MaxWorkTimes($event,$this->app['queue.failer']);
         });
     }
 
+
     public function register()
     {
+        $this->app->singleton('queue.failer', function () {
+            $config = $this->app['config']['queue.failed'];
+
+            return isset($config['table'])
+                ? $this->databaseFailedJobProvider($config)
+                : new NullFailedJobProvider;
+        });
+
         $this->app->bind('Service', function(){
             return $this->app->make('DefenderService\DamMicroService\Service');
         });
@@ -63,11 +82,24 @@ class DamMicroServiceProvider extends ServiceProvider
 
         $this->commands(array_values($this->commands));
 
-             $this->app->configureMonologUsing(function(\Monolog\Logger $monolog) {
+        $this->app->configureMonologUsing(function(\Monolog\Logger $monolog) {
             $handler = (new \Monolog\Handler\StreamHandler(config('logger.lumen.path')))
                 ->setFormatter(new \Monolog\Formatter\LineFormatter(null, null, true, true));
             return $monolog->pushHandler($handler);
         });
 
+    }
+
+    /**
+     * Create a new database failed job provider.
+     *
+     * @param  array  $config
+     * @return \Illuminate\Queue\Failed\DatabaseFailedJobProvider
+     */
+    protected function databaseFailedJobProvider($config)
+    {
+        return new DatabaseFailedJobProvider(
+            $this->app['db'], $config['database'], $config['table']
+        );
     }
 }
