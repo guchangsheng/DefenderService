@@ -82,11 +82,23 @@ class DamMicroServiceProvider extends ServiceProvider
 
         $this->commands(array_values($this->commands));
 
-        $this->app->configureMonologUsing(function(\Monolog\Logger $monolog) {
-            $handler = (new \Monolog\Handler\StreamHandler(config('logger.lumen.path')))
-                ->setFormatter(new \Monolog\Formatter\LineFormatter(null, null, true, true));
-            return $monolog->pushHandler($handler);
-        });
+         if (env('docker') == 1) {
+            $this->app->configureMonologUsing(function(\Monolog\Logger $monolog) {
+                $handler = (new \Monolog\Handler\StreamHandler(config('logger.lumen.path')))
+                    ->setFormatter(new \Monolog\Formatter\LineFormatter(null, null, true, true));
+                return $monolog->pushHandler($handler);
+            });
+        } else {
+            $this->app->configureMonologUsing(function ($monolog) {
+                $maxFiles = config('logger.lumen.days');
+                $formatter = new \Monolog\Formatter\LogstashFormatter(null, null, null, 'ctxt_',  \Monolog\Formatter\LogstashFormatter::V1);
+                #$LineFormatter = new \Monolog\Formatter\LineFormatter(null, null, true, true);
+                $rotatingLogHandler = (new \Monolog\Handler\RotatingFileHandler(config('logger.lumen.path'), $maxFiles))
+                    ->setFormatter($formatter);
+                $monolog->setHandlers([$rotatingLogHandler]);
+                return $monolog;
+            });
+        }
 
     }
 
